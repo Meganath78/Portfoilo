@@ -1,6 +1,5 @@
 import { Project } from "@/types/resume";
 import SectionHeader from "@/components/SectionHeader";
-import Reveal from "@/components/Reveal";
 import ProjectRow from "./ProjectRow";
 
 interface ProjectsProps {
@@ -20,9 +19,7 @@ export default function Projects({ projects }: ProjectsProps) {
 
         <div className="projects__list">
           {projects.map((project, index) => (
-            <Reveal key={project.id}>
-              <ProjectRow project={project} index={index} />
-            </Reveal>
+            <ProjectRow key={project.id} project={project} index={index} />
           ))}
         </div>
       </div>

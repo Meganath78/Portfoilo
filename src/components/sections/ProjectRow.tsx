@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Project } from "@/types/resume";
 import { ArrowUpRight, X } from "lucide-react";
+import Reveal from "@/components/Reveal";
 
 interface ProjectRowProps {
   project: Project;
@@ -38,7 +39,8 @@ export default function ProjectRow({ project, index }: ProjectRowProps) {
 
   return (
     <>
-      <article className={`project ${index % 2 === 1 ? "project--reverse" : ""}`}>
+      <Reveal>
+        <article className={`project ${index % 2 === 1 ? "project--reverse" : ""}`}>
         <div className="project__visual" aria-hidden="true">
           <span className="project__ghost-num">{num}</span>
           <span className="project__corner project__corner--tl" />
@@ -95,6 +97,7 @@ export default function ProjectRow({ project, index }: ProjectRowProps) {
           </div>
         </div>
       </article>
+      </Reveal>
 
       {open && (
         <div

@@ -18,15 +18,14 @@ export default function Reveal({
   tag = "div",
 }: RevealProps) {
   const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(
-    () => typeof IntersectionObserver === "undefined"
-  );
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
 
     if (typeof IntersectionObserver === "undefined") {
+      setVisible(true);
       return;
     }
 

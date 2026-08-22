@@ -81,8 +81,8 @@ export default function Contact({ profile, social }: ContactProps) {
                     <span className="mono-label">{channel.label}</span>
                     <span className="contact__channel-value">
                       {channel.label === "GitHub" || channel.label === "LinkedIn"
-                        ? `/${channel.value}`
-                        : channel.value}
+                        ? `${channel.label}`
+                        : channel.label}
                     </span>
                     <ArrowUpRight size={18} className="contact__channel-icon" aria-hidden="true" />
                   </a>
