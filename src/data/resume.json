@@ -18,7 +18,7 @@
   "experience": [
     {
       "company": "Capgemini",
-      "role": "Software Engineer",
+      "role": "Software Engineer - Capgemini",
       "period": "2025 - Present",
       "description": "Enterprise software development with Java and full-stack application development.",
       "responsibilities": [
@@ -28,17 +28,64 @@
         "Testing API and UI functionality using Playwright and Postman.",
         "Writing and executing automated test scenarios."
       ],
-      "technologies": ["Java", "Spring Boot", "React", "TypeScript", "Hibernate", "JPA", "JDBC", "SQL", "Playwright", "Postman"]
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "React",
+        "TypeScript",
+        "Hibernate",
+        "JPA",
+        "JDBC",
+        "SQL",
+        "Playwright",
+        "Postman"
+      ]
     }
   ],
   "skills": {
-    "languages": ["Java", "Python", "SQL"],
-    "backend": ["Spring Boot", "Spring MVC", "Hibernate", "JPA", "JDBC"],
-    "frontend": ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
-    "database": ["MySQL"],
-    "tools": ["Git", "GitHub", "Postman", "Antigravity", "Claude", "Playwright"],
-    "concepts": ["OOP", "Collections", "Exception Handling", "REST APIs", "Multithreading", "TCP/IP", "Firewall basics"],
-    "softSkills": ["Problem Solving & Analytical Thinking", "Communication Skills & Team Collaboration"]
+    "languages": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "backend": [
+      "Spring Boot",
+      "Spring MVC",
+      "Hibernate",
+      "JPA",
+      "JDBC"
+    ],
+    "frontend": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "TypeScript"
+    ],
+    "database": [
+      "MySQL"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Postman",
+      "Antigravity",
+      "Claude",
+      "Playwright"
+    ],
+    "concepts": [
+      "OOP",
+      "Collections",
+      "Exception Handling",
+      "REST APIs",
+      "Multithreading",
+      "TCP/IP",
+      "Firewall basics"
+    ],
+    "softSkills": [
+      "Problem Solving & Analytical Thinking",
+      "Communication Skills & Team Collaboration"
+    ]
   },
   "projects": [
     {
@@ -46,7 +93,12 @@
       "title": "Employee Management System",
       "category": "Full-Stack Web Application",
       "description": "A comprehensive web application designed to manage employee records using MVC architecture.",
-      "technologies": ["Java", "Spring Boot", "Hibernate/JPA", "MySQL"],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Hibernate/JPA",
+        "MySQL"
+      ],
       "features": [
         "Implemented full CRUD operations for employee management.",
         "Developed REST APIs for seamless frontend-backend communication.",
@@ -63,7 +115,13 @@
       "title": "Artificial Vision Based Fire and Smoke Recognition Using YOLO",
       "category": "Machine Learning / AI",
       "description": "An AI-based early fire detection and surveillance system utilizing computer vision.",
-      "technologies": ["Python", "YOLOv8", "OpenCV", "MySQL", "Frontend Development"],
+      "technologies": [
+        "Python",
+        "YOLOv8",
+        "OpenCV",
+        "MySQL",
+        "Frontend Development"
+      ],
       "features": [
         "Built AI-based fire and smoke detection models.",
         "Trained and evaluated image datasets for optimal performance.",

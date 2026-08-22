@@ -41,6 +41,7 @@ export default function Hero({ profile, skills }: HeroProps) {
               <Reveal tag="span" className="hero__line" delay={60}>
                 {firstName}
               </Reveal>
+              <span style={{ display: 'inline-block', width: '0.25em' }}></span>
               <Reveal tag="span" className="hero__line hero__line--accent" delay={140}>
                 {lastName}
               </Reveal>

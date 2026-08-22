@@ -30,7 +30,7 @@ export default function Experience({ experience }: ExperienceProps) {
 
               <div className="xp__body">
                 <header className="xp__head">
-                  <p className="mono-label">{exp.company}</p>
+                  {/* <p className="mono-label">{exp.company}</p> */}
                   <h3 className="xp__role">{exp.role}</h3>
                   <p className="xp__summary">{exp.description}</p>
                 </header>

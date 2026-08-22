@@ -1,6 +1,6 @@
 "use client";
-
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 const NAV_ITEMS = [
   { id: "about", label: "Profile" },
@@ -83,17 +83,21 @@ export default function Navbar({ name, role }: NavbarProps) {
           ))}
         </nav>
 
-        <button
-          type="button"
-          className={`nav__toggle ${open ? "nav__toggle--open" : ""}`}
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          aria-label={open ? "Close menu" : "Open menu"}
-          onClick={() => setOpen(!open)}
-        >
-          <span />
-          <span />
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <ThemeToggle />
+
+          <button
+            type="button"
+            className={`nav__toggle ${open ? "nav__toggle--open" : ""}`}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen(!open)}
+          >
+            <span />
+            <span />
+          </button>
+        </div>
       </div>
 
       <div id="mobile-menu" className={`nav__menu ${open ? "nav__menu--open" : ""}`}>
