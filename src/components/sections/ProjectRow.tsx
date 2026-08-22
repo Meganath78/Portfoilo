@@ -15,24 +15,30 @@ export default function ProjectRow({ project, index }: ProjectRowProps) {
   const closeRef = useRef<HTMLButtonElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
+  const wasOpenRef = useRef(false);
+
   const handleKeydown = useCallback((event: KeyboardEvent) => {
     if (event.key === "Escape") setOpen(false);
   }, []);
 
   useEffect(() => {
-    if (!open) return;
-    document.body.style.overflow = "hidden";
-    document.addEventListener("keydown", handleKeydown);
-    closeRef.current?.focus();
+    if (open) {
+      wasOpenRef.current = true;
+      document.body.style.overflow = "hidden";
+      document.addEventListener("keydown", handleKeydown);
+      closeRef.current?.focus();
+    } else {
+      document.body.style.overflow = "";
+      if (wasOpenRef.current) {
+        wasOpenRef.current = false;
+        triggerRef.current?.focus();
+      }
+    }
     return () => {
       document.body.style.overflow = "";
       document.removeEventListener("keydown", handleKeydown);
     };
   }, [open, handleKeydown]);
-
-  useEffect(() => {
-    if (!open) triggerRef.current?.focus();
-  }, [open]);
 
   const num = String(index + 1).padStart(2, "0");
   const hasLinks = Boolean(project.links?.github || project.links?.demo);
